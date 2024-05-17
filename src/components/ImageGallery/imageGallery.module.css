@@ -1,0 +1,32 @@
+.imageGallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.imageGalleryItem {
+  width: calc(25% - 10px);
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  .image-gallery-item {
+    width: calc(33.33% - 10px);
+  }
+}
+
+@media (max-width: 900px) {
+  .image-gallery-item {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 600px) {
+  .image-gallery-item {
+    width: calc(100% - 10px);
+  }
+}
